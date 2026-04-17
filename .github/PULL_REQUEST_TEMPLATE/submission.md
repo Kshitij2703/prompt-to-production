@@ -1,9 +1,9 @@
 # Vibe Coding Workshop — Submission PR
 
-**Name:**  
-**City / Group:**  
-**Date:**  
-**AI tool(s) used:**  
+**Name: Kshitij Navale**  
+**City / Group: Pune/SIT-Pune**  
+**Date:17/04/2025**  
+**AI tool(s) used:Claude,Antigravity,Chatgpt**  
 
 ---
 
@@ -26,24 +26,29 @@
 **Which failure mode did you encounter first?**
 *(taxonomy drift / severity blindness / missing justification / hallucinated sub-categories / false confidence)*
 
-> [Your answer]
+> [Severity blindness — the naive prompt classified complaints mentioning child, school, injury, hazard, and fell as Standard instead of urgent because there was no explicit rule enforcing keyword-based priority escalation.]
 
 **What enforcement rule fixed it? Quote the rule exactly as it appears in your agents.md:**
 
-> [Your answer]
+> [Priority must be Urgent if the description contains any severity keyword: injury, child, school, hospital, ambulance, fire, hazard,fell, collapse]
 
 **How many rows in your results CSV match the answer key?**
 *(Tutor will release answer key after session)*
 
-> [Your answer] out of 15
+> [The results CSV has 15 rows. The answer key hasn't been released yet, so this can't be confirmed until then.] out of 15
 
 **Did all severity signal rows (injury/child/school/hospital) return Urgent?**
 
-> Yes / No — [explain any exceptions]
+> Yes / No — 
+
+PM-202402 — "school children" → Urgent ✓
+- PM-202411 — "electrical hazard" → Urgent ✓
+- PM-202420 — "risk of serious injury" → Urgent ✓
+- PM-202446 — "elderly resident fell" → Urgent ✓
 
 **Your git commit message for UC-0A:**
 
-> [paste your commit message here]
+> [The commit message is just uc-0a — it doesn't follow the recommended UC-0A Fix [failure mode]: [why it failed] → [what you changed] formula from the README.]
 
 ---
 
